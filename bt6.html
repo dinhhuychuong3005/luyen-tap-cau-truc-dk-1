@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /* Nếu doanh số > 10tr thì được 5%
+Nếu doanh số > 20tr thì được 10%
+nếu doanh số >= 30 thì được 20% */
+    let a = +prompt('nhap vao doanh so ban hang');
+    if (a > 10){
+        alert('tien hoa hong: ' + a * (5/100) + 'trieu')
+    }
+    else if (a > 20){
+        alert('tien hoa hong: ' + a * (10/100) + 'trieu');
+    }
+    else if (a > 30){
+        alert('tien hoa hong: ' + a * (20/100) + 'trieu');
+    }
+</script>
+</body>
+</html>
