@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+     - Phí thuê bao bắt buộc 20 nghìn
+     - Tính 600 đồng cho mỗi phút gọi của 30 phút đầu tiên
+     - 400 đồng cho mỗi phút gọi của 120 phút tiếp theo
+     - 200 đồng cho bất kỳ phút cuộc gọi nào sau 150 phút đầu tiên.
+       -->
+<script>
+    let so_phut = +prompt('nhap vao so phut da goi');
+    if (so_phut > 150){
+        alert('Cuoc dien thoai la: '+ (((so_phut - 150) * 200 + 120 * 400 + 600 * 30) + 20000))
+    }
+    else if (so_phut > 120){
+        alert('Cuoc dien thoai la: '+ (((so_phut - 120) * 400 + 600 * 30) + 20000))
+    }
+    else alert(
+            ('Cuoc dien thoai la: '+ ((so_phut * 600) + 20000)))
+</script>
+</body>
+</html>
